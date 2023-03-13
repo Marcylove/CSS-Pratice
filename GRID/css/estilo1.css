@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    padding: 20px;
+    width: 70%;
+    height: 70vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*--------------imagenes-------------*/
+.img1{
+    background: url(../img/plato1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    width: 100%;
+    height: 66vh;
+    transition: 0.5s;
+}
+.img2{
+    background: url(../img/plato2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    width: 100%;
+    height: 66vh;
+    transition: 0.5s;
+}
+.img3{
+    background: url(../img/plato3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    width: 100%;
+    height: 66vh;
+    transition: 0.5s;
+}
+.img4{
+    background: url(../img/plato4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    width: 100%;
+    height: 66vh;
+    transition: 0.5s;
+}
+.img5{
+    background: url(../img/plato5.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    width: 100%;
+    height: 66vh;
+    transition: 0.5s;
+}
+.img6{
+    background: url(../img/plato6.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    width: 100%;
+    height: 66vh;
+    transition: 0.5s;
+}
+/*-------------------tarjeta------------------*/
+.caja1{
+    display: grid;
+    grid-row: 1/6;
+    grid-column: 1/4;
+    box-shadow:0 0 15px rgba(109, 109, 109, 0.4);
+}
+.caja2{
+    display: grid;
+    grid-row: 1/6;
+    grid-column: 4/7;
+    box-shadow:0 0 15px rgb(109, 109, 109, 0.4);
+}
+.caja3{
+    display: grid;
+    grid-row: 1/6;
+    grid-column: 7/10;
+    box-shadow:0 0 15px rgb(109, 109, 109, 0.4);
+}
+.caja1, .caja2, .caja3, .info{
+    border-radius: 20px;
+}
+.img1, .img2, .img3, .img4, .img5, .img6{
+    border-radius: 20px;
+}
+/*-----------hover------------*/
+.img1:hover{
+    height: 50vh;
+}
+.img2:hover{
+    height: 50vh;
+}
+.img3:hover{
+    height: 50vh;
+}
+.img4:hover{
+    height: 50vh;
+}
+.img5:hover{
+    height: 50vh;
+}
+.img6:hover{
+    height: 50vh;
+}
+/*-----------informacion------------*/
+.info{
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 1/4;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+.uno{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dos{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.titulo{
+    color: rgb(0, 0, 0);
+}
+.boton{
+    background-color: rgb(255, 174, 0);
+    padding: 15px 32px;
+    border: none;
+    border-radius: 50px;
+}
+.boton1{
+    padding: 15px 32px;
+}

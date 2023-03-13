@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*-------------------tarjeta------------------*/
+.caja1{
+    border-radius: 20px;
+    display: grid;
+    
+    background:url(../img/plato1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;    
+z-index: 1;
+    grid-row: 1/9;
+    grid-column: 1/6;
+    box-shadow:0 0 15px rgba(109, 109, 109, 0.4);
+}
+.caja2{
+    border-radius: 20px;
+    display: grid;
+
+    background:url(../img/plato2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+z-index: 1;
+    grid-row: 1/5;
+    grid-column: 6/9;
+    box-shadow:0 0 15px rgb(109, 109, 109, 0.4);
+}
+.caja3{
+    border-radius: 20px;
+    display: grid;
+    background:url(../img/plato3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+    z-index: 1;
+    grid-row: 1/5;
+    grid-column: 9/12;
+    box-shadow:0 0 15px rgb(109, 109, 109, 0.4);
+}
+.caja4{
+    border-radius: 20px;
+    display: grid;
+    background:url(../img/plato4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+    z-index: 1;
+    grid-row: 5/9;
+    grid-column: 6/9;
+    box-shadow:0 0 15px rgb(109, 109, 109, 0.4);
+}
+.caja5{
+    border-radius: 20px;
+    display: grid;
+    background:url(../img/plato5.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+    z-index: 1;
+    grid-row: 5/9;
+    grid-column: 9/12;
+    box-shadow:0 0 15px rgb(109, 109, 109, 0.4);
+}
+/*----------el show---------------*/
+.cajita1, .cajita2, .cajita3, .cajita4, .cajita5{
+    position: absolute;
+    overflow: hidden;
+    visibility: 0;
+}
+.contenedor p{
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    visibility: 0;
+    max-width: max-content;
+}
+.cajita1.mostrar{
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+    grid-row: 6/9;
+    grid-column: 1/6;
+    background: rgb(255, 255, 255);
+}
+.cajita2.mostrar{
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+    grid-row: 3/5;
+    grid-column: 6/9;
+    background: rgb(255, 255, 255);
+}
+.cajita3.mostrar{
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+    grid-row: 3/5;
+    grid-column: 9/12;
+    background: rgb(255, 255, 255);
+}
+.cajita4.mostrar{
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+    grid-row: 7/9;
+    grid-column: 6/9;
+    background: rgb(255, 255, 255);
+}
+.cajita5.mostrar{
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+    grid-row: 7/9;
+    grid-column: 9/12;
+    background: rgb(255, 255, 255);
+}
+/*--------------*/
+
+
+/*-----------hover------------*/
+
+/*-----------informacion------------*/
